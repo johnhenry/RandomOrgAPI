@@ -1,5 +1,5 @@
 #RandomOrgAPI
-##Library for accessing Random.org's from within your javascript application. 
+##API for accessing random.org within java script applications. 
 Can be used in both client-side and server-side applications.
 ### Installation
 #### Node
