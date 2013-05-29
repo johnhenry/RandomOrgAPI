@@ -1,0 +1,16 @@
+{
+  "name" : "random-org-api",
+  "version" : "0.0.1",
+  "description" : "API for accessing random.org within javascript applications.",
+  "keywords" : ["random","random.org","api","number","list","cryptography"],
+  "author" : "John Henry <john@iamjohnhenry.com>",
+  "homepage" : "https://github.com/johnhenry/RandomOrgAPI",
+  "repository" : {
+    "type" : "git",
+    "url" : "git://github.com/johnhenry/RandomOrgAPI.git"
+  },
+  "main" : "RandomOrg",
+  "dependencies" : {
+          "CreateAPI":"0.0.x"
+      }
+}
