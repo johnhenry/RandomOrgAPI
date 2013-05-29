@@ -39,9 +39,9 @@ Each API takes up to three arguments -- parameters, callback, failure
 
 Each API is based on an API found here: [http://www.random.org/#numbers](http://www.random.org/#numbers)
 
-### RandomOrgAPI.integers - creates an array of random integers
-parameters
-
+### RandomOrgAPI.integers(parameters,callback,failure)
+creates an array of random integers
+	Parameters
     * min - the minimum possible value for the generated integers
         //Default:0
     * max - the maximum possible value for the generated integers
@@ -53,7 +53,8 @@ parameters
     * num - the amount of random numbers generated
         //Default:10
 
-### RandomOrgAPI.sequence - creates a randomly ordered array of all integers between two numbers
+### RandomOrgAPI.sequences(parameters,callback,failure)
+creates a randomly ordered array of all integers between two numbers
 parameters
 
     * min - the smallest number included
@@ -61,9 +62,9 @@ parameters
     * max - the largest number included
         //Default:9
 
-### RandomOrgAPI.integerSet - creates an list of sets of integers
-parameters
-
+### RandomOrgAPI.integerSets(parameters,callback,failure)
+creates an list of sets of integers
+	Parameters
     * min - the minimum possible value for the generated integers
         //Default:0
     * max - the maximum possible value for the generated integers
@@ -72,17 +73,17 @@ parameters
     * sets - the amount of sets generated
         //Default:10
 
-### RandomOrgAPI.decimalFractions - creates an list random numbers between 0 and 1
-parameters
-
+### RandomOrgAPI.decimalFractions(parameters,callback,failure)
+creates an list random numbers between 0 and 1
+	Parameters
     * dec - the decimal precision of each number
         //Default:10
     * num - the amount of numbers generated
         //Default:10
 
-### RandomOrgAPI.gaussianDistributions - creates a list of random numbers that satisfy a given guassian distribution
-parameters
-
+### RandomOrgAPI.gaussianDistributions(parameters,callback,failure)
+creates a list of random numbers that satisfy a given guassian distribution
+	Parameters
     * mean - the mean of the given guassian distribution
         //Default:0
     * stdev - the standard deviation of the given guassian distribution
@@ -92,19 +93,20 @@ parameters
     * num - the amount of numbers generated
         //Default:10
 
-### RandomOrgAPI.bytes - creates random bytes
-parameters
+### RandomOrgAPI.bytes(parameters,callback,failure)
+creates random bytes
 
+	Parameters
     * nbytes - the number of bytes to be generated
         //Default:8
 
-##Example
+####Example
 The following example creates a variable named "die" and then assigns a random integer between 1 and 6 (inclusive) to it's value.
 
 ```js
 var die;
 RandomOrgAPI.integer({min:1,max:6,num:1},function(result){console.log(die = result[0])});
-```js
+```
 
 ## License
 
