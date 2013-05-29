@@ -41,6 +41,7 @@ Each API is based on an API found here: [http://www.random.org/#numbers](http://
 
 ### RandomOrgAPI.integers(parameters,callback,failure)
 creates an array of random integers
+
 	Parameters
     * min - the minimum possible value for the generated integers
         //Default:0
@@ -55,8 +56,8 @@ creates an array of random integers
 
 ### RandomOrgAPI.sequences(parameters,callback,failure)
 creates a randomly ordered array of all integers between two numbers
-parameters
 
+    Parameters
     * min - the smallest number included
         //Default:0
     * max - the largest number included
@@ -64,6 +65,7 @@ parameters
 
 ### RandomOrgAPI.integerSets(parameters,callback,failure)
 creates an list of sets of integers
+
 	Parameters
     * min - the minimum possible value for the generated integers
         //Default:0
@@ -75,6 +77,7 @@ creates an list of sets of integers
 
 ### RandomOrgAPI.decimalFractions(parameters,callback,failure)
 creates an list random numbers between 0 and 1
+
 	Parameters
     * dec - the decimal precision of each number
         //Default:10
@@ -83,6 +86,7 @@ creates an list random numbers between 0 and 1
 
 ### RandomOrgAPI.gaussianDistributions(parameters,callback,failure)
 creates a list of random numbers that satisfy a given guassian distribution
+
 	Parameters
     * mean - the mean of the given guassian distribution
         //Default:0
