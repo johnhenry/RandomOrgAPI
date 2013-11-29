@@ -109,7 +109,7 @@ The following example creates a variable named "die" and then assigns a random i
 
 ```js
 var die;
-RandomOrgAPI.integer({min:1,max:6,num:1},function(result){console.log(die = result[0])});
+RandomOrgAPI.integers({min:1,max:6,num:1},function(result){console.log(die = result[0])});
 ```
 
 ## License
